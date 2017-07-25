@@ -19,7 +19,9 @@ defmodule Hdcy.Mixfile do
   def application do
     [mod: {Hdcy, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :coherence]]
+                    :phoenix_ecto, :postgrex, :coherence],
+     included_applications: [:elixir_make, :ex_admin]
+    ]
   end
 
   # Specifies which paths to compile per environment.
