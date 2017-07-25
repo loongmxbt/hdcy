@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :hdcy, Hdcy.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "/", port: 80],
+  url: [host: "elecapp.com.cn", port: 80],
   cache_static_manifest: "priv/static/manifest.json",
   root: "."
 
