@@ -1,0 +1,50 @@
+<header>
+  <nav class="top-nav">
+    <div class="container">
+      <div class="links">
+        <a href="/">&nbsp;就业中心&nbsp;</a>
+        <a href="/">&nbsp;微信公号&nbsp;</a>
+        <a href="/">&nbsp;创业协会&nbsp;</a>
+        <a href="/registrations/new" class="pull-right">&nbsp;注册&nbsp;</a> 
+        <a href="/sessions/new" class="pull-right">&nbsp;登录&nbsp;</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <div class="container">
+      <a href="/" class="logo"><img src="/images/logo_2x.png" width="100%" alt=""></a>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-default main-menu">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/">首页</a></li>
+          <li><%= link "创业案例", to: showcase_path(@conn, :index) %></li>
+          <li><%= link "创业导师", to: tutor_path(@conn, :index) %></li>
+          <li><a href="/posts/1">团队入驻</a></li>
+          <li><a href="/posts/2">公司注册</a></li>
+          <li><a href="/posts/3">团队招募</a></li>
+          <li><a href="/posts/4">创业证办理</a></li>
+          <li><a href="/posts/5">项目申报</a></li>
+          <li><a href="/posts/6">创业指导</a></li>
+          <li><a href="/posts/7">常用下载</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+</header>

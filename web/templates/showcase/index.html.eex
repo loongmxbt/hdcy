@@ -1,0 +1,39 @@
+<br>
+<section class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-3">
+        <ul class="nav nav-sidebar">
+          <li><a href="#">Idea阶段</a></li>
+          <li><a href="#">天使轮</a></li>
+          <li><a href="#">A轮</a></li>
+          <li><a href="#">创业基金</a></li>
+          <li><a href="#">创业大赛</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-9">
+        <div class="row">
+          <%= for showcase <- @showcases do %>
+          <div class="col-xs-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <img src="<%= showcase.image %>" width="100%" alt="">
+              </div>
+              <div class="panel-body">
+                <h4><%= link showcase.name, to: showcase_path(@conn, :show, showcase)%></h4>
+                <p><%= showcase.desc %></p>
+              </div>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+
+  
+
+    </div>
+  </div>
+</section>
+
